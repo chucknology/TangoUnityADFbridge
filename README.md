@@ -1,7 +1,8 @@
 # TangoUnityADFbridge
-Unitypackage for importing and exporting Project Tango Area Description Files.
+Unity plugin for importing and exporting Project Tango Area Description Files.
 
 You can use this library until this functionality is included with the Project Tango Unity SDK.
+Place the .jar file in your /Android/Plugins folder in your Unity project.
 
 ```
 // Import ADF
