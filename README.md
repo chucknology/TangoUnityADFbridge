@@ -6,7 +6,7 @@ You can use this library until this functionality is included with the Project T
 Place the .jar file in your /Android/Plugins folder in your Unity project.
 
 ```
-// Import ADF
+// Import ADF (filepath)
 var androidJC = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 var jo = androidJC.GetStatic<AndroidJavaObject>("currentActivity");
 var jc = new AndroidJavaClass("net.chucknology.tango.adftool.UnityPlugin");
@@ -14,7 +14,7 @@ jc.CallStatic("ImportAreaDescriptionFile", jo, filepath);
 ```
 
 ```
-// Export ADF
+// Export ADF (uuid, filepathDirectory)
 var androidJC = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 var jo = androidJC.GetStatic<AndroidJavaObject>("currentActivity");
 var jc = new AndroidJavaClass("net.chucknology.tango.adftool.UnityPlugin");
